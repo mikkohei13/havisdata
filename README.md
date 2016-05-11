@@ -1,6 +1,7 @@
 Työkaluja GBIF-havaintodatan käsittelyyn.
 
-==Huomioita==
+Huomioita
+=========
 
 Tiira-datan koordinaatit on pyöristetty lähimpään 0,1 asteeseen. Esim:
 

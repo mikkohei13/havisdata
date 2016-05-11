@@ -4,7 +4,7 @@ $filename = "data/tiira-simple.csv";
 
 //$dataString = file_get_contents($filename);
 
-
+// Source: http://stackoverflow.com/questions/6830191/reading-huge-file-line-by-line-in-php
 $handle = fopen($filename, "r") or die("Couldn't get handle");
 if ($handle) {
     while (!feof($handle)) {
