@@ -1,8 +1,6 @@
 <?php
-$filename = "data/tiira-simple-30.csv";
+$filename = "data/tiira-simple.csv";
 
-$filterSpecies = "Emberiza rustica";
-$filterMuni = "Sipoo";
 
 //$dataString = file_get_contents($filename);
 
@@ -19,10 +17,10 @@ if ($handle) {
 
 function parseBuffer($row)
 {
-	global $filterSpecies;
-	global $filterMuni;
+	$filterSpecies = "Emberiza rustica";
+	$filterMuni = "Sipoo";
 
-	print_r ($row);
+//	print_r ($row);
 //	exit(); // debug
 
 //	$dataRows = explode("\n", $dataString);
@@ -45,6 +43,7 @@ function parseBuffer($row)
 
 	echo $row;
 	echo "<br />\n";
+
 
 
 }
