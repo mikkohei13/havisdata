@@ -1,5 +1,7 @@
 <?php
 $filename = "data/tiira-simple.csv";
+$filename = "data/tiira-simple-30.csv";
+$filename = "data/tiira-simple-awk10000.csv";
 
 
 //$dataString = file_get_contents($filename);
@@ -9,13 +11,14 @@ $handle = fopen($filename, "r") or die("Couldn't get handle");
 if ($handle) {
     while (!feof($handle)) {
         $buffer = fgets($handle, 4096);
-        parseBuffer($buffer);
+        parseBufferFiltered($buffer);
     }
     fclose($handle);
 }
 
+echo "END";
 
-function parseBuffer($row)
+function parseBufferFiltered($row)
 {
 	$filterSpecies = "Emberiza rustica";
 	$filterMuni = "Sipoo";
